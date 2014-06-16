@@ -1,3 +1,3 @@
 class Url < ActiveRecord::Base
-  belongs_to :photo
+  belongs_to :photos
 end

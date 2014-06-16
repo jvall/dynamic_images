@@ -1,4 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @photo.name %></h1>
+
+<% @photo.urls.each do |url| %>
+  <p><%= url.actual_url %></p>
+<% end %>
+
+<h3>Add a URL</h3>
+
+
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
 <%= link_to 'Back', photos_path %>
